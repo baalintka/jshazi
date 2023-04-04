@@ -25,3 +25,6 @@ function tablazatkeszit(OBJEKTUMLISTA){
     osszerak+="</table>";
     return osszerak;
 }
+ELEM.on("click", function(){
+    console.log("ram nyomtal bro!");
+})
