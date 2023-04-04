@@ -1,6 +1,6 @@
 import {OBJEKTUMLISTA} from "./adat.js";
 
-(document).ready(function() {
+$(document).ready(function() {
     init();
 });
 function init(){
