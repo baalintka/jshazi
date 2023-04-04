@@ -6,5 +6,5 @@ function init(){
 
 
 function tablazatkeszit(OBJEKTUMLISTA){
-    let kiir="";
+    let osszerak="";
 }
