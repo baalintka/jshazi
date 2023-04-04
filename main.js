@@ -1,10 +1,21 @@
 import {OBJEKTUMLISTA} from "/.adat.js";
 function init(){
     const ELEM=$("article");
-    tablazatkeszit(OBJEKTUMLISTA);
+    ELEM.append(tablazatkeszit(OBJEKTUMLISTA));
 }
 
 
 function tablazatkeszit(OBJEKTUMLISTA){
-    let osszerak="";
+    let osszerak="<table>";
+    osszerak+="<tr>+<th>Név:</th>+<th>Fajta:</th>+<th>Kor:</th> +</tr>";
+    for (let index = 0; index < OBJEKTUMLISTA.length; index++) {
+        osszerak+="<tr>";
+        osszerak+="<td>"+OBJEKTUMLISTA[index].név+"</td>";
+        osszerak+="<td>"+OBJEKTUMLISTA[index].fajta+"</td>";
+        osszerak+="<td>"+OBJEKTUMLISTA[index].kor+"</td>";
+        osszerak+="</tr>";
+        
+    }
+    osszerak+="</table>";
+    return osszerak;
 }
