@@ -1,7 +1,9 @@
-import {OBJEKTUMLISTA} from "/.adat.js";
+import {OBJEKTUMLISTA} from "./adat.js";
 function init(){
     const ELEM=$("article");
-    ELEM.append(tablazatkeszit(OBJEKTUMLISTA));
+    const tablazat=tablazatkeszit(OBJEKTUMLISTA);
+    ELEM.append(tablazat);
+    
 }
 
 
@@ -17,5 +19,5 @@ function tablazatkeszit(OBJEKTUMLISTA){
         
     }
     osszerak+="</table>";
-    return osszerak;
+    return osszerak
 }
