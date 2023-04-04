@@ -19,5 +19,5 @@ function tablazatkeszit(OBJEKTUMLISTA){
         
     }
     osszerak+="</table>";
-    return osszerak
+    return osszerak;
 }
