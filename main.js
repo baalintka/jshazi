@@ -9,7 +9,7 @@ function init(){
 
 function tablazatkeszit(OBJEKTUMLISTA){
     let osszerak="<table>";
-    osszerak+="<tr>+<th>Név:</th>+<th>Fajta:</th>+<th>Kor:</th> +</tr>";
+    osszerak+="<tr><th>Név:</th><th>Fajta:</th><th>Kor:</th></tr>";
     for (let index = 0; index < OBJEKTUMLISTA.length; index++) {
         osszerak+="<tr>";
         osszerak+="<td>"+OBJEKTUMLISTA[index].név+"</td>";
