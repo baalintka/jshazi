@@ -12,8 +12,8 @@ function init(){
 
 
 function tablazatkeszit(OBJEKTUMLISTA){
-    let osszerak="<table style='border: 2px solid black'>";
-    osszerak+="<tr><th style='border: 1px solid black'>Név:</th><th style='border: 1px solid black'>Fajta:</th><th style='border: 1px solid black'>Kor:</th></tr>";
+    let osszerak="<table class='table table-dark table-striped'style='border: 2px solid black'>";
+    osszerak+="<tr><th style='border: 1px solid black'>Név:</th><th style='border: 1px solid black'>Fajta:</th><th >Kor:</th></tr>";
     for (let index = 0; index < OBJEKTUMLISTA.length; index++) {
         osszerak+="<tr>";
         osszerak+="<td style='border: 1px solid black'>"+OBJEKTUMLISTA[index].név+"</td>";
