@@ -1,4 +1,5 @@
 import {OBJEKTUMLISTA} from "./adat.js";
+import { rendezesSzamszerint } from "./rendezes.js";
 const ELEM=$("article");
 $(document).ready(function() {
     init();
@@ -27,4 +28,5 @@ function tablazatkeszit(OBJEKTUMLISTA){
 }
 ELEM.on("click", function(){
     console.log("ram nyomtal bro!");
+    rendezesSzamszerint(OBJEKTUMLISTA,kulcs);
 })
