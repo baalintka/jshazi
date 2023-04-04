@@ -1,10 +1,10 @@
 import {OBJEKTUMLISTA} from "./adat.js";
-
+const ELEM=$("article");
 $(document).ready(function() {
     init();
 });
 function init(){
-    const ELEM=$("article");
+    
     const tablazat=tablazatkeszit(OBJEKTUMLISTA);
     ELEM.append(tablazat);
     
